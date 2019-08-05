@@ -7,6 +7,15 @@
 </ion-header>
 
 <ion-content>
+  <!--
+    On va afficher chaque film dans une card ionic
+    On affiche l'image, le nombre de vote du film, le titre du film et sa description
+
+    Pour l'image attention à l'URL:
+    https://image.tmdb.org/t/p/w500/AAAAAAAAAA.jpg
+
+    On affichera 3card par ligne
+  -->
   <div *ngFor="let movie of movies">
     {{ movie | json }}
   </div>
